@@ -1,7 +1,7 @@
 ---
 title: "Lab 07 - Conveying the right message through visualisation"
-author: "Insert your name here"
-date: "Insert date here"
+author: "Benjamin Egan"
+date: "2-24-25"
 output: github_document
 ---
 
@@ -11,14 +11,79 @@ output: github_document
 library(tidyverse) 
 ```
 
-### Exercise 1
+### Create Kansas COVID Data
 
-Remove this text, and add your answer for Exercise 1 here.
-Add code chunks as needed.
-Don't forget to label your code chunk.
-Do not use spaces in code chunk labels.
+```{r Kansas COVID}
 
-### Exercise 2
+Kansas_Mask <- tribble(
+  ~date, ~count, ~mask_status,
+  "7/12", 25.5, "mask",
+  "7/13", 19.8, "mask",
+  "7/14", 19.7, "mask",
+  "7/15", 20.5, "mask",
+  "7/16", 19.8, "mask",
+  "7/17", 19.8, "mask",
+  "7/18", 20.5, "mask",
+  "7/19", 20, "mask",
+  "7/20", 20.7, "mask",
+  "7/21", 21.3, "mask",
+  "7/22", 19.8, "mask",
+  "7/23", 19.8, "mask",
+  "7/24", 20.5, "mask",
+  "7/25", 19, "mask",
+  "7/26", 19.5, "mask",
+  "7/27", 17, "mask",
+  "7/28", 16.3, "mask",
+  "7/29", 16.5, "mask",
+  "7/30", 16.7, "mask",
+  "7/31", 16, "mask",
+  "8/1", 16.3, "mask",
+  "8/2", 15.8, "mask",
+  "8/3", 16, "mask",
+  "7/12", 9.8, "no mask",
+  "7/13", 9.2, "no mask",
+  "7/14", 9.5, "no mask",
+  "7/15", 9.8, "no mask",
+  "7/16", 9.9, "no mask",
+  "7/17", 9.6, "no mask",
+  "7/18", 9.55, "no mask",
+  "7/19", 9, "no mask",
+  "7/20", 8.4, "no mask",
+  "7/21", 8.4, "no mask",
+  "7/22", 8.6, "no mask",
+  "7/23", 8.3, "no mask",
+  "7/24", 9.8, "no mask",
+  "7/25", 9.9, "no mask",
+  "7/26", 10.1, "no mask",
+  "7/27", 9.6, "no mask",
+  "7/28", 9.6, "no mask",
+  "7/29", 9.65, "no mask",
+  "7/30", 10, "no mask",
+  "7/31", 8.7, "no mask",
+  "8/1", 9, "no mask",
+  "8/2", 8.7, "no mask",
+  "8/3", 9.2, "no mask",
+)
+Kansas_Mask
+
+```
+
+### Create Kansas COVID Visual
+
+```{r Kansas visual}
+
+Kansas_Mask %>%
+ggplot(aes(
+  x = date,
+  y = count,
+  color = mask_status
+))+
+  geom_point()+
+  theme_bw()
+
+
+```
+
 
 ...
 
