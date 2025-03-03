@@ -178,7 +178,7 @@ ggplot(aes(
 ![](lab-07_files/figure-gfm/mutated%20data-1.png)<!-- -->
 
 This graph can be used to remind people that COVID cases are still
-prevalent in the no-mask counties
+prevalent in the no-mask counties.
 
 ``` r
 Kansas_Mask %>%
