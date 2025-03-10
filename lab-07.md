@@ -3,6 +3,24 @@ Lab 07 - Conveying the right message through visualisation
 Benjamin Egan
 2-24-25
 
+Link to Assignment:
+<https://datascience4psych.github.io/DataScience4Psych/lab07.html>
+
+## Assignment Details
+
+In this lab, our goal is to reconstruct and improve a data visualization
+concerning COVID-19 and mask-wearing practices. We aim to explore how
+data visualizations can sometimes mislead and learn techniques to
+correct these misrepresentations.
+
+The following visualization was shared on Twitter as “extraordinary
+misleading”.
+
+<figure>
+<img src="Original_Graph.png" alt="Original Kansas Graph" />
+<figcaption aria-hidden="true">Original Kansas Graph</figcaption>
+</figure>
+
 ### Create Kansas COVID Data
 
 ``` r

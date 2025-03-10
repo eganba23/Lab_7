@@ -5,12 +5,20 @@ date: "2-24-25"
 output: github_document
 ---
 
-
+Link to Assignment: https://datascience4psych.github.io/DataScience4Psych/lab07.html
 
 ```{r load-packages, echo = FALSE, message=FALSE}
 library(tidyverse)
 library(ggplot2)
 ```
+
+## Assignment Details
+
+In this lab, our goal is to reconstruct and improve a data visualization concerning COVID-19 and mask-wearing practices. We aim to explore how data visualizations can sometimes mislead and learn techniques to correct these misrepresentations.
+
+The following visualization was shared on Twitter as “extraordinary misleading”.
+
+![Original Kansas Graph](Original_Graph.png)
 
 ### Create Kansas COVID Data
 
@@ -69,7 +77,8 @@ Kansas_Mask
 
 ```
 
-### Create Kansas COVID Visual
+
+### Create a better Kansas COVID Visual
 
 ```{r Kansas visual}
 
