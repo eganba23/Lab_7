@@ -6,6 +6,8 @@ Benjamin Egan
 Link to Assignment:
 <https://datascience4psych.github.io/DataScience4Psych/lab07.html>
 
+    ## Warning: package 'purrr' was built under R version 4.3.3
+
 ## Assignment Details
 
 In this lab, our goal is to reconstruct and improve a data visualization
@@ -91,7 +93,7 @@ Kansas_Mask
     ## 10 7/21   21.3 mask       
     ## # ℹ 36 more rows
 
-### Create Kansas COVID Visual
+### Create a better Kansas COVID Visual
 
 ``` r
 Kansas_Mask %>%
